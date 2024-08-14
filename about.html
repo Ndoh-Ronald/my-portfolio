@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - CHE RONALD NDOH</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <style>
+    /* Reuse the styles from the main page */
+    /* ... (copy the styles from the previous code) ... */
+
+    .about-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+
+    .about-text {
+      flex-basis: 60%;
+    }
+
+    .about-image {
+      flex-basis: 35%;
+      border-radius: 10px;
+      background-image: url('path/to/your/about-image.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+    }
+
+    @media (max-width: 768px) {
+      .about-content {
+        flex-direction: column;
+      }
+
+      .about-text {
+        flex-basis: auto;
+        margin-bottom: 20px;
+      }
+
+      .about-image {
+        flex-basis: auto;
+        width: 100%;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="profile-picture"></div>
+      <div class="social-links">
+        <!-- Social links from the main page -->
+      </div>
+    </div>
+    <div class="nav-buttons">
+      <!-- Navigation buttons from the main page -->
+    </div>
+    <div class="about-content">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I am a passionate software engineer with a strong background in developing innovative and user-friendly applications. With a keen eye for detail and a love for problem-solving, I strive to create solutions that not only meet the needs of my clients but also exceed their expectations.</p>
+        <p>Throughout my career, I have had the opportunity to work on a variety of projects, from building complex web applications to developing mobile apps. I have honed my skills in a range of programming languages and technologies, and I am always eager to learn new techniques and stay up-to-date with the latest industry trends.</p>
+        <p>Beyond my technical expertise, I am also a strong communicator and collaborator. I enjoy working closely with clients and team members to ensure that projects are delivered on time and to the highest standard.</p>
+        <a href="#" class="button">Learn More</a>
+      </div>
+      <div class="about-image"></div>
+    </div>
+  </div>
+</body>
+</html>

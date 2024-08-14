@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CHE RONALD NDOH - software Engineer </title>
+  <title>CHE RONALD NDOH - Software Engineer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <style>
     /* Reset some default styles */
     * {
@@ -15,98 +16,125 @@
     body {
       font-family: Arial, sans-serif;
       color: #333;
+      background-image: url(background\ pic.jpeg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
 
     .container {
       max-width: 1200px;
       margin: 0 auto;
       padding: 40px 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     }
 
     .header {
       display: flex;
       align-items: center;
+      justify-content: space-between;
       margin-bottom: 40px;
     }
 
     .profile-picture {
       width: 200px;
       height: 200px;
-      border-radius: 80%;
+      border-radius: 50%;
       background-image: url(profic\ pic.jpeg);
       background-size: cover;
       background-position: center;
       margin-right: 30px;
     }
 
-    .header-content h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    .header-content p {
-      font-size: 18px;
-    }
-
-    .section {
+    .nav-buttons {
+      display: flex;
+      justify-content: center;
       margin-bottom: 40px;
     }
 
-    .section h2 {
+    .nav-buttons a {
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin: 0 10px;
+      transition: background-color 0.3s;
+    }
+
+    .nav-buttons a:hover {
+      background-color: #0056b3;
+    }
+
+    .social-links {
+      display: flex;
+      align-items: center;
+    }
+
+    .social-links a {
+      color: #333;
       font-size: 24px;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    .social-links a:hover {
+      color: #666;
+    }
+
+    .content {
+      margin-top: 40px;
+    }
+
+    h1 {
+      font-size: 36px;
       margin-bottom: 20px;
     }
 
-    .section p {
+    p {
+      font-size: 18px;
       line-height: 1.6;
       margin-bottom: 20px;
     }
 
-    .background-image {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background-size: cover;
-      background-image: url(background\ pic.jpeg);
-      background-position: center;
-      background-repeat: no-repeat;
-      filter: blur(5px);
-      opacity: 0.5;
+    .button {
+      display: inline-block;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
 <body>
-  <div class="background-image"></div>
   <div class="container">
     <div class="header">
       <div class="profile-picture"></div>
-      <div class="header-content">
-        <h1>CHE RONALD NDOH</h1>
-        <p>IT Consultant</p>
+      <div class="social-links">
+        <a href="https://wa.me/123456789" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/your_username" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/your_username" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/your_username" target="_blank"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
-    <div class="section">
-      <h2>About</h2>
-      <p>CHE RONALD NDOH is an experienced IT consultant who has worked in various organizations, including Laurate Business Centre, CamCCUL, and FLUXSARL. He has a diverse background in IT, with both internship and voluntary service experience.</p>
+    <div class="nav-buttons">
+      <a href="#">Home</a>
+      <a href="http://127.0.0.1:5500/about.html">About</a>
+      <a href="http://127.0.0.1:5500/project.html">Projects</a>
+      <a href="http://127.0.0.1:5500/contact.html">Contact</a>
     </div>
-    <div class="section">
-      <h2>Work Experience</h2>
-      <p>CHE RONALD NDOH has worked as an IT consultant at Laurate Business Centre, where he provided technical support and solutions for the company's IT infrastructure. He has also completed an internship and voluntary service at CamCCUL, gaining valuable experience in the IT industry.</p>
-      <p>Currently, CHE RONALD NDOH is on an internship training at FLUXSARL, where he continues to utilize his IT expertise to support the company's operations.</p>
-    </div>
-    <div class="section">
-      <h2>Skills</h2>
-      <p>CHE RONALD NDOH possesses a wide range of IT skills, including but not limited to:</p>
-      <ul>
-        <li>Proficient in hardware and software troubleshooting</li>
-        <li>Skilled in network administration and configuration</li>
-        <li>Experienced in database management and data analysis</li>
-        <li>Adept in programming languages such as Python, Java, and C++</li>
-        <li>Familiar with project management methodologies</li>
-      </ul>
+    <div class="content">
+      <h1>CHE RONALD NDOH</h1>
+      <p>I am a software engineer with a passion for building innovative and user-friendly applications. I have experience in a variety of programming languages and technologies, and I'm always eager to learn new skills.</p>
+      <a href="#" class="button">Hire Me</a>
     </div>
   </div>
 </body>
