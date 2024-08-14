@@ -119,10 +119,10 @@
     <div class="header">
       <div class="profile-picture"></div>
       <div class="social-links">
-        <a href="https://wa.me/123456789" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://www.instagram.com/your_username" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/qr/VHTHWRCYTO3OO1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/home_boi.237?igsh=MTMybHQ3dHo5OHpteQ==" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://www.facebook.com/your_username" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.linkedin.com/in/your_username" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.linkedin.com/in/che-ronald-0b140a300" target="_blank"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
     <div class="nav-buttons">
@@ -135,6 +135,29 @@
       <h1>CHE RONALD NDOH</h1>
       <p>I am a software engineer with a passion for building innovative and user-friendly applications. I have experience in a variety of programming languages and technologies, and I'm always eager to learn new skills.</p>
       <a href="#" class="button">Hire Me</a>
+      <a href="http://127.0.0.1:5500/resume.html.pdf" class="button" download>Download Resume</a>
+      <div class="download-button">
+        <a href="http://127.0.0.1:5500/resume.html.pdf" onclick="downloadResume()" class="btn">Download Resume</a>
+      </div>
+    </div>
+  
+    <script>
+      function downloadResume() {
+        // Create a temporary link element
+        var link = document.createElement('a');
+        link.setAttribute('download', 'Che-Ronald-Ndoh-Resume.html');
+  
+        // Convert the HTML content to a data URI
+        var html = document.documentElement.outerHTML;
+        var dataUri = 'data:text/html;charset=utf-8,' + encodeURIComponent(html);
+        link.setAttribute('href', dataUri);
+  
+        // Append the link to the document and click it
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    </script>
     </div>
   </div>
 </body>
