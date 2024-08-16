@@ -16,7 +16,7 @@
     body {
       font-family: Arial, sans-serif;
       color: #333;
-      background-image: url(background\ pic.jpeg);
+      background-image: url(pic.jpg.png);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -41,7 +41,7 @@
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      background-image: url(profic\ pic.jpeg);
+      background-image: url(background_2.jpg.jpg);
       background-size: cover;
       background-position: center;
       margin-right: 30px;
@@ -112,6 +112,30 @@
     .button:hover {
       background-color: #0056b3;
     }
+
+    .expertise-boxes {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
+
+    .expertise-box {
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      width: 48%;
+    }
+
+    .expertise-box h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .expertise-box p {
+      font-size: 16px;
+      line-height: 1.4;
+    }
   </style>
 </head>
 <body>
@@ -135,11 +159,18 @@
       <h1>CHE RONALD NDOH</h1>
       <p>I am a software engineer with a passion for building innovative and user-friendly applications. I have experience in a variety of programming languages and technologies, and I'm always eager to learn new skills.</p>
       <a href="#" class="button">Hire Me</a>
-      <div class="download-button">
-        <a href="http://127.0.0.1:5500/resume.html.pdf" onclick="downloadResume()" class="btn">Download Resume</a>
+      <a href="#" class="button">DownloadResume</a>
+    </div>
+    <div class="expertise-boxes">
+      <div class="expertise-box">
+        <h2>AI Expertise</h2>
+        <p>I have extensive experience in developing AI-powered applications, including machine learning models, natural language processing, and computer vision. I can help you incorporate cutting-edge AI technologies into your projects to drive innovation and business growth.</p>
+      </div>
+      <div class="expertise-box">
+        <h2>Front-End Development</h2>
+        <p>As a skilled front-end developer, I specialize in creating visually appealing and highly interactive user interfaces. I have expertise in popular front-end frameworks and libraries like React, Angular, and Vue.js, and I'm committed to delivering responsive, mobile-friendly designs.</p>
       </div>
     </div>
-  
     <script>
       function downloadResume() {
         // Create a temporary link element
@@ -157,7 +188,6 @@
         document.body.removeChild(link);
       }
     </script>
-    </div>
   </div>
 </body>
 </html>
