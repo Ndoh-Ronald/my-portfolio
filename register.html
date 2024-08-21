@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - Portfolio Website</title>
+  <title>Login/Register - Portfolio Website</title>
   <link rel="stylesheet" href="styles.css">
   <!-- <script src="script.js"></script> -->
-  <script type="module" src="script2.js" defer></script>
+  <script type="module" src="script.js" defer></script>
   <style>
   
   body {
@@ -95,18 +95,19 @@
   <div class="login-register-container">
     
     
-    <h2>Login</h2>
-    <form id="login form">
-     
+    <h2>Register</h2>
+    <form id="registerForm">
+      <label for="username">Username:</label>
+      <input type="text" value="" id="username" name="username" required>
+
       <label for="email">Email:</label>
       <input type="email" value="" id="email" name="email" required>
 
       <label for="password">Password:</label>
       <input type="password" value="" id="password" name="password" required>
 
-      <button type="button"  id="submit">login</button>
+      <button type="button"  id="submit">Register</button>
     </form>
-    <a href="http://127.0.0.1:5501/register.html" id="registerBtn">Register/Signup</a>
   </div>
 
  
