@@ -1,1 +1,1 @@
-this is my portfolio page with an atteached login and register page which enalbles users to login and register. 
+this is my portfolio page with an atteached login and register page which enalbles users to login and register and view my portfolio. 
